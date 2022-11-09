@@ -14,17 +14,17 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route>
-            <Home exact path="/" />
+          <Route exact path="/">
+            <Home />
           </Route>
-          <Route>
-            <Create path="/create" />
+          <Route path="/create">
+            <Create />
           </Route>
-          <Route>
-            <Search path="/search" />
+          <Route path="/search" >
+            <Search />
           </Route>
-          <Route>
-            <Recipe path="/recipes/:id " />
+          <Route path="/recipes/:id ">
+            <Recipe />
           </Route>
         </Switch>
       </BrowserRouter>
